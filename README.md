@@ -33,7 +33,7 @@ El objetivo principal es practicar el envío y recepción de datos en formato JS
 ### Instalación
 1. Clonar el repositorio
 2. Configurar servidor web (XAMPP/WAMP)
-3. Importar base de datos productosdb
+3. Importar base de datos crud_fetch_mysql.sql
 4. Configurar conexión en Modelo/conexion.php
 ## Funcionalidades
 - Registrar nuevos productos
