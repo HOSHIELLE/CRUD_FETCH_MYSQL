@@ -1,0 +1,184 @@
+/* ================================================
+   styles.css  
+================================================= */
+
+/* Paleta de colores base */
+:root {
+  --primary: #8b5cf6;        /* Morado principal */
+  --primary-dark: #7c3aed;   /* Morado más oscuro para hover */
+  --accent: #c4b5fd;         /* Morado suave para detalles */
+  --accent-soft: #f5f3ff;    /* Fondo morado muy clarito */
+  --bg-page: #f3e8ff;        /* Fondo general lila */
+  --text-main: #111827;      /* Texto principal oscuro */
+  --table-header: #4c1d95;   /* Encabezado de tabla morado oscuro */
+}
+
+/* Fondo general de la página */
+body {
+  /* Degradado suave en tonos lilas */
+  background: radial-gradient(circle at top left, #f5e1ff, #f3e8ff);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* Contenedor principal del contenido */
+.app-container {
+  max-width: 1100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Título principal del CRUD */
+.app-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+
+  /* Color morado sólido (puede ser degradado si quieres) */
+  background: #6f1fba;
+
+  /* Hace que el fondo pinte solo el texto */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  /* Pequeño brillo alrededor del texto */
+  text-shadow: 0 0 18px rgba(168, 85, 247, 0.2);
+}
+
+/* Tarjeta blanca donde está el formulario */
+.card-form {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(167, 139, 250, 0.6); /* borde moradito */
+  box-shadow: 0 18px 40px rgba(88, 28, 135, 0.22); /* sombra suave */
+}
+
+/* Título de sección "Listado de Productos" */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Barra morada decorativa antes del título de sección */
+.section-title::before {
+  content: "";
+  width: 6px;
+  height: 20px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #a855f7, #6366f1);
+}
+
+/* === Botones personalizados === */
+
+/* Botón principal (Guardar) en morado */
+.btn-primary {
+  background: #a855f7 !important;
+  border-color: #a855f7 !important;
+  font-weight: 600;
+  border-radius: 999px;
+  padding-inline: 20px;
+}
+
+.btn-primary:hover {
+  background: #9333ea !important;
+  border-color: #9333ea !important;
+}
+
+/* Botón "Nuevo" con morado suave */
+.btn-secondary-custom {
+  background: #c4b5fd;
+  border-color: #c4b5fd;
+  color: #2e1065;
+  font-weight: 500;
+  border-radius: 999px;
+  padding-inline: 20px;
+}
+
+.btn-secondary-custom:hover {
+  background: #a78bfa;
+  border-color: #a78bfa;
+}
+
+/* Botón "Buscar" con estilo similar a Guardar */
+.btn-info-custom {
+  background: #a855f7;
+  border-color: #a855f7;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 999px;
+  padding-inline: 20px;
+}
+
+.btn-info-custom:hover {
+  background: #9333ea;
+  border-color: #9333ea;
+}
+
+/* Inputs redondeados en general */
+.form-control {
+  border-radius: 999px;
+  border-color: #ddd6fe; /* borde lila clarito */
+}
+
+/* Efecto visual cuando un input tiene el foco */
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.15rem rgba(139, 92, 246, 0.35);
+}
+
+/* Encabezado de tabla */
+table thead {
+  background: var(--table-header);
+  color: #ffffff;
+}
+
+/* Filas de la tabla con efecto hover */
+table tbody tr {
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+table tbody tr:hover {
+  background: var(--accent-soft); /* morado muy suave al pasar el mouse */
+  transform: translateY(-1px);
+}
+
+/* Botón "Editar" dentro de la tabla */
+.btn-warning-custom {
+  border-radius: 999px;
+  font-size: 0.8rem;
+  padding-inline: 14px;
+  background: #7b00b0;
+  border-color: #7b00b0;
+  color: #fff;
+}
+
+.btn-warning-custom:hover {
+  background: #9a00cd;
+  border-color: #9a00cd;
+}
+
+/* Botón "Eliminar" dentro de la tabla */
+.btn-danger-custom {
+  border-radius: 999px;
+  font-size: 0.8rem;
+  padding-inline: 14px;
+  background: #5d0085;
+  border-color: #5d0085;
+  color: #fff;
+}
+
+.btn-danger-custom:hover {
+  background: #9a00cd;
+  border-color: #9a00cd;
+}
+
+/* Centrar el texto del encabezado "Acciones" */
+th:last-child {
+  text-align: center !important;
+}
