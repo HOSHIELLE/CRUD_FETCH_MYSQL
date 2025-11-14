@@ -44,7 +44,7 @@ El objetivo principal es practicar el envío y recepción de datos en formato JS
 - Botón para volver a mostrar todo el listado
 - Validaciones en cliente + validaciones en servidor
 ## Autores
-Estudiantes: Stephany Chong y Alexandra Zheng
-Asignatura: Ingeniería Web
-Universidad Tecnológica de Panamá
-Docente: Ing. Irina Fong
+- Estudiantes: Stephany Chong y Alexandra Zheng
+- Asignatura: Ingeniería Web
+- Universidad Tecnológica de Panamá
+- Docente: Ing. Irina Fong
